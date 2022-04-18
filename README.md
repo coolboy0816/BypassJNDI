@@ -17,9 +17,11 @@ java -jar BypassJNDI.jar
 ```
 
 ### 使用效果
+
 ![image](https://user-images.githubusercontent.com/30894096/163807285-fe9d467d-78df-4f0e-a5b4-e3015de30d24.png)
 
 ### 使用方法
+
 #### 0x00: 指定vps url和开放端口，建议云上主机开启全部端口
 #### 0x01: 指定对应model，根据需求选择
 #### 0x02: 指定对应目标系统
@@ -27,6 +29,7 @@ java -jar BypassJNDI.jar
 
 
 ### 使用截图
+
 ```bash
 java -jar BypassJndi.jar 192.168.0.58 1099 elProcessor windows whoami
 ```
